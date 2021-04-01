@@ -28,11 +28,21 @@ function writeCards(array, event){
 }
 
 writeCards(cards);
+/*
+//the test is looking for a returned value as type number. 
+this is a solution that does not use a while loop
 
-//the test is looking for a returned value as type number.
 function countDown(number){
     for(let i=number ; i >= 0; i--){
     console.log(number);
     number = number - 1;
     }
+}
+*/
+//this solution uses a while loop :D
+function countDown(number){
+  let count = number;
+  while(count>=0){
+    console.log(count--);
+  }
 }
